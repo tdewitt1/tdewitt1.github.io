@@ -1,11 +1,67 @@
-/* Typography */
-
-/* Bio & Resume */
-
-/* Portfolio */
 body {
-	background: #f0f;
+	background: url("../img/boplay.png");
 }
-img {	
-	width: 320px;
+h1, h2, h3, h4 {
+	font-family: 'Dosis', sans-serif;
+	color: red;
+}
+
+p {
+	font-family: 'Lora', serif;
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+	color: red;
+}
+a:visited {
+	text-decoration: none;
+	color: gray; 
+}
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+a:active {
+	text-decoration: none;
+}
+
+#gallery {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: 100px auto;
+}
+
+#navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#navigation li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  clear: both;
+}
+
+#navigation li a img {
+  display: block;
+  border: none;
+}
+
+#navigation li a {
+  display: block;
+}
+
+#full-picture {
+  overflow: hidden;
+  float: left;
+  position: relative;
+	display: block;
+max-width: 100%;
+max-height: auto;
 }
