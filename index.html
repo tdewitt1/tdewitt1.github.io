@@ -1,72 +1,135 @@
 <!--doctype html -->
 <html lang="en">
 <head>
+    
   <meta charset="UTF-8" />
+    
   <title>Home</title>	
- 
- <link rel="stylesheet" href="css/normalize.css">
- <!-- Fonts -->
+   
+    
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/gridpak.css">		
+<link rel="stylesheet" href="css/styles.css"> 
+    
+  <script src="js/modernizr.js"></script>
+
+    <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Dosis:700|Lora' rel='stylesheet' type='text/css'>
 
+<meta name="viewport" content="width=device-width">  
 
- <link rel="stylesheet" href="css/gridpak.css">		
- <link rel="stylesheet" href="css/styles.css">	
- <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-	<a name="top"></a>
+	
+<a name="top"></a>
+
 <div class="page">
 <!--Header & Nav-->
 		
-			<div class="row">
-				<header class="col">
-					<h1>Taylor DeWitt</h1>
-				</header>
-			</div>
+<div class="row">
+    <header class="col">
+<h1>Taylor DeWitt</h1>
+</header>
+</div>
 
-			<div class="row">
-				<header class="col">
-					<nav>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="bioresume.html">Bio & Resume</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-						</ul>
-					</nav>
-				</header>
-			</div>
-		
-		<div class="row">
-			<div>
-				<img src="img/dragonkin.png" alt="Dragonkin" style="width:85%" style="height:85%" align="right">
-			</div>
+<div class="row">
+<header class="col">
 
-		<div class="row">
-			<h2>Welcome to the Home Page!</h2>
-		</div>
+<ul >
+<li><a href="index.html">Home</a></li>
+<li><a href="bioresume.html">Bio & Resume</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 
-		<div>
-			<p>Hi --- This is my home page. Feel free to explore the site. Or not. I can't tell you how to live your life, you rebel you. I'd appreciate it if you did though.</p>
-		</div>
+</header>
+</div>
+	
 
-		<div>
-		<h3>Contact Me!</h3>
-	</div>
+<div class="row">
+<h2>Welcome to the Home Page!</h2>
+</div>
+            
+<div>
+<p>Hi --- This is my home page. Feel free to explore the site. Or not. I can't tell you how to live your life, you rebel you. I'd appreciate it if you did though.</p>
+</div>
+ 
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider carousel">
+        <ul class="slides">
+            <li>
+  	    	    <img src="img/angel.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/asg1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/dragonkin.png" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/ebonhawk.png" />
+  	    		</li>
+            <li>
+  	    	    <img src="img/eoq1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/eoq2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/ewaau.png" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/firetext.jpg" />
+  	    		</li>
+            <li>
+  	    	    <img src="img/flowers.png" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/gamers.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/mercury.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/planet.png" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>  	
+	
+<div class="row">
+<footer class="col created">
+<p>Website Created by Taylor DeWitt</p>
+</footer>
+</div>  	 	 	
+  	 	 	 	 	
+</div>
 
-		<form action="//formspree.io/your@email.com"
-      method="POST">
-    <input type="text" name="name" value="John Smith" onFocus="this.value''">
-    <input type="email" value="you@email.com" onFocus="this.value''" name="_replyto">
-    <input type="submit" value="Send">
-</form>
-		<div class="row">
-		<footer class="col created">
-			<p>Website Created by Taylor DeWitt</p>
-			<a href="#top">Back to Top</a>
-		</footer>
-		</div>
-  	
-	</div> 
+<!-- Plugins -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        pausePlay: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
